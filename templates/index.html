@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Квадратное уравнение</title>
+</head>
+<body>
+    <h1>Вычисление корней квадратного уравнения</h1>
+
+    <form method="post">
+        <label for="a">a:</label>
+        <input type="text" name="a" id="a" required><br><br>
+
+        <label for="b">b:</label>
+        <input type="text" name="b" id="b" required><br><br>
+
+        <label for="c">c:</label>
+        <input type="text" name="c" id="c" required><br><br>
+
+        <input type="submit" value="Вычислить">
+    </form>
+
+    {% if roots %}
+        <h2>{{ roots }}</h2>
+    {% endif %}
+</body>
+</html>
